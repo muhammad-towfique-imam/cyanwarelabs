@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <!-- Background scanning line effect -->
+    <rect x="6" y="5" width="12" height="0.4" fill="#4A90E2" fill-opacity="0.6"/>
+
+    <!-- Digital scan lines for tech feel -->
+    <line x1="6" y1="8" x2="14" y2="8" stroke="#4A90E2" stroke-width="0.2" stroke-opacity="0.6"/>
+    <line x1="6" y1="9.4" x2="12" y2="9.4" stroke="#4A90E2" stroke-width="0.2" stroke-opacity="0.4"/>
+    <line x1="6" y1="10.8" x2="15" y2="10.8" stroke="#4A90E2" stroke-width="0.2" stroke-opacity="0.3"/>
+    <line x1="6" y1="12.2" x2="13" y2="12.2" stroke="#4A90E2" stroke-width="0.2" stroke-opacity="0.5"/>
+    <line x1="6" y1="13.6" x2="16" y2="13.6" stroke="#4A90E2" stroke-width="0.2" stroke-opacity="0.4"/>
+    <line x1="6" y1="15" x2="11" y2="15" stroke="#4A90E2" stroke-width="0.2" stroke-opacity="0.6"/>
+    <line x1="6" y1="16.4" x2="14" y2="16.4" stroke="#4A90E2" stroke-width="0.2" stroke-opacity="0.3"/>
+
+    <!-- Magnifying glass group (translated to x=12, y=11) -->
+    <g transform="translate(12, 11)">
+        <!-- Green inner circle -->
+        <circle cx="0" cy="0" r="2.5" fill="#4CAF50"/>
+
+        <!-- Outer circle -->
+        <circle cx="0" cy="0" r="3.5" fill="none" stroke="#4A90E2" stroke-width="0.4"/>
+
+        <!-- Handle -->
+        <line x1="2.5" y1="2.5" x2="4" y2="4" stroke="#4A90E2" stroke-width="0.6" stroke-linecap="round"/>
+
+        <!-- Letter 'b' inside magnifying glass -->
+        <path d="M-0.5,-1.5 L-0.5,1 M-0.5,0.3 Q-0.5,-0.3 0.2,-0.3 Q0.8,-0.3 0.8,0.3 Q0.8,1 0.2,1 Q-0.5,1 -0.5,0.3 Z"
+            fill="none"
+            stroke="#FFFFFF"
+            stroke-width="0.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"/>
+    </g>
+</svg>

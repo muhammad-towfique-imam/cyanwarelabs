@@ -178,7 +178,7 @@
         .product-icon {
             width: 80px;
             height: 80px;
-            background: linear-gradient(45deg, #06b6d4, #5ee0c4);
+            background: linear-gradient(45deg, #0f172a, #374151);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -186,6 +186,11 @@
             margin: 0 auto 1rem;
             font-size: 2rem;
             color: white;
+        }
+
+        .bubblescan-icon {
+            width: 100px;
+            height: 100px;
         }
 
         .product-card h3 {
@@ -443,14 +448,16 @@
                 <div class="product-grid">
                     <!-- Bubble Scan -->
                     <div class="product-card">
-                        <div class="product-icon">📱</div>
+                        <div class="product-icon">
+                            <img src="images/svg/bubblescan.svg" alt="Bubble Scan" class="bubblescan-icon">
+                        </div>
                         <h3>Bubble Scan</h3>
                         <p>Revolutionary OMR scanner that transforms your smartphone into a powerful optical mark recognition tool for educational institutions.</p>
                         <ul class="product-features">
-                            <li>AI-powered bubble detection</li>
+                            <li>OMR bubble detection using computer vision</li>
                             <li>Instant grade calculation</li>
                             <li>Multiple OMR format support</li>
-                            <li>500 free scans included</li>
+                            <li>50 free scans included</li>
                             <li>Institutional licensing available</li>
                         </ul>
                         <a href="#" class="product-link">Download on Google Play</a>
