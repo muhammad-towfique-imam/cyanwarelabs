@@ -1,0 +1,209 @@
+<svg width="300" height="100" viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cyanGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00ffff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#5ee0c4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5ee0c4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle/badge -->
+  <circle cx="50" cy="50" r="35" fill="url(#cyanGradient)" opacity="0.1"/>
+
+  <!-- Binary representation of "CL" -->
+  <!-- C = 67 (ASCII) = 0100 0011 in binary -->
+  <!-- L = 76 (ASCII) = 0100 1100 in binary -->
+  <!-- Combined: 0100001101001100 (16 bits) -->
+  <!-- Arranged in a meaningful pattern within the circle -->
+  <g transform="translate(25, 25)">
+    <!-- C, row1: 0100 -->
+    <rect x="15" y="10" width="4" height="4" fill="#5ee0c4" opacity="0.3"/> <!-- 0 -->
+    <rect x="21" y="10" width="4" height="4" fill="url(#cyanGradient)"/>    <!-- 1 -->
+    <rect x="27" y="10" width="4" height="4" fill="#5ee0c4" opacity="0.3"/> <!-- 0 -->
+    <rect x="33" y="10" width="4" height="4" fill="#5ee0c4" opacity="0.3"/> <!-- 0 -->
+
+    <!-- C, row2: 0011 -->
+    <rect x="15" y="16" width="4" height="4" fill="#5ee0c4" opacity="0.3"/> <!-- 0 -->
+    <rect x="21" y="16" width="4" height="4" fill="#5ee0c4" opacity="0.3"/> <!-- 0 -->
+    <rect x="27" y="16" width="4" height="4" fill="url(#cyanGradient)"/>    <!-- 1 -->
+    <rect x="33" y="16" width="4" height="4" fill="url(#cyanGradient)"/>    <!-- 1 -->
+
+    <!-- Center: Core processor representation -->
+    <rect x="22" y="22" width="6" height="6" fill="#00cb0a"/>
+
+    <!-- L, row1: 0100 -->
+    <rect x="15" y="30" width="4" height="4" fill="#5ee0c4" opacity="0.3"/> <!-- 0 -->
+    <rect x="21" y="30" width="4" height="4" fill="url(#cyanGradient)"/>    <!-- 1 -->
+    <rect x="27" y="30" width="4" height="4" fill="#5ee0c4" opacity="0.3"/> <!-- 0 -->
+    <rect x="33" y="30" width="4" height="4" fill="#5ee0c4" opacity="0.3"/> <!-- 0 -->
+
+    <!-- L, row2: 1100 -->
+    <rect x="15" y="36" width="4" height="4" fill="url(#cyanGradient)"/>    <!-- 1 -->
+    <rect x="21" y="36" width="4" height="4" fill="url(#cyanGradient)"/>    <!-- 1 -->
+    <rect x="27" y="36" width="4" height="4" fill="#5ee0c4" opacity="0.3"/> <!-- 0 -->
+    <rect x="33" y="36" width="4" height="4" fill="#5ee0c4" opacity="0.3"/> <!-- 0 -->
+
+    <!-- Connection lines to suggest circuit pathways -->
+    <line x1="22" y1="12" x2="22" y2="16" stroke="#00ffff" stroke-width="1" opacity="0.5"/>
+    <line x1="28" y1="12" x2="28" y2="16" stroke="#00ffff" stroke-width="1" opacity="0.5"/>
+    <line x1="17" y1="18" x2="21" y2="22" stroke="#00ffff" stroke-width="1" opacity="0.5"/>
+    <line x1="31" y1="18" x2="27" y2="22" stroke="#00ffff" stroke-width="1" opacity="0.5"/>
+    <line x1="22" y1="28" x2="22" y2="32" stroke="#00ffff" stroke-width="1" opacity="0.5"/>
+    <line x1="28" y1="28" x2="28" y2="32" stroke="#00ffff" stroke-width="1" opacity="0.5"/>
+  </g>
+
+  <!-- CYANWARE text with pixelated style -->
+  <g transform="translate(95, 25)">
+    <!-- C -->
+    <rect x="0" y="0" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="5" y="0" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="10" y="0" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="0" y="5" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="0" y="10" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="0" y="15" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="0" y="20" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="5" y="20" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="10" y="20" width="5" height="5" fill="url(#cyanGradient)"/>
+
+    <!-- Y -->
+    <rect x="20" y="0" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="30" y="0" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="20" y="5" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="30" y="5" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="25" y="10" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="25" y="15" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="25" y="20" width="5" height="5" fill="url(#cyanGradient)"/>
+
+    <!-- A -->
+    <rect x="40" y="5" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="45" y="0" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="50" y="5" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="40" y="10" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="45" y="10" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="50" y="10" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="40" y="15" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="50" y="15" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="40" y="20" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="50" y="20" width="5" height="5" fill="url(#cyanGradient)"/>
+
+    <!-- N -->
+    <rect x="60" y="0" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="60" y="5" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="60" y="10" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="60" y="15" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="60" y="20" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="65" y="5" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="70" y="10" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="75" y="15" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="80" y="0" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="80" y="5" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="80" y="10" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="80" y="15" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="80" y="20" width="5" height="5" fill="url(#cyanGradient)"/>
+
+    <!-- W -->
+    <rect x="90" y="0" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="90" y="5" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="90" y="10" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="90" y="15" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="90" y="20" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="95" y="15" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="100" y="10" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="105" y="15" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="110" y="0" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="110" y="5" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="110" y="10" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="110" y="15" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="110" y="20" width="5" height="5" fill="url(#cyanGradient)"/>
+
+    <!-- A -->
+    <rect x="120" y="5" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="125" y="0" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="130" y="5" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="120" y="10" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="125" y="10" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="130" y="10" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="120" y="15" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="130" y="15" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="120" y="20" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="130" y="20" width="5" height="5" fill="url(#cyanGradient)"/>
+
+    <!-- R -->
+    <rect x="140" y="0" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="145" y="0" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="150" y="0" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="140" y="5" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="155" y="5" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="140" y="10" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="145" y="10" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="150" y="10" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="140" y="15" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="150" y="15" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="140" y="20" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="155" y="20" width="5" height="5" fill="url(#cyanGradient)"/>
+
+    <!-- E -->
+    <rect x="165" y="0" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="170" y="0" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="175" y="0" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="165" y="5" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="165" y="10" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="170" y="10" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="165" y="15" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="165" y="20" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="170" y="20" width="5" height="5" fill="url(#cyanGradient)"/>
+    <rect x="175" y="20" width="5" height="5" fill="url(#cyanGradient)"/>
+  </g>
+
+  <!-- LABS text (smaller, below CYANWARE) -->
+  <g transform="translate(95, 55)">
+    <!-- L -->
+    <rect x="0" y="0" width="4" height="4" fill="#5ee0c4"/>
+    <rect x="0" y="4" width="4" height="4" fill="#5ee0c4"/>
+    <rect x="0" y="8" width="4" height="4" fill="#5ee0c4"/>
+    <rect x="0" y="12" width="4" height="4" fill="#5ee0c4"/>
+    <rect x="0" y="16" width="4" height="4" fill="#5ee0c4"/>
+    <rect x="4" y="16" width="4" height="4" fill="#5ee0c4"/>
+    <rect x="8" y="16" width="4" height="4" fill="#5ee0c4"/>
+
+    <!-- A -->
+    <rect x="18" y="4" width="4" height="4" fill="#5ee0c4"/>
+    <rect x="22" y="0" width="4" height="4" fill="#5ee0c4"/>
+    <rect x="26" y="4" width="4" height="4" fill="#5ee0c4"/>
+    <rect x="18" y="8" width="4" height="4" fill="#5ee0c4"/>
+    <rect x="22" y="8" width="4" height="4" fill="#5ee0c4"/>
+    <rect x="26" y="8" width="4" height="4" fill="#5ee0c4"/>
+    <rect x="18" y="12" width="4" height="4" fill="#5ee0c4"/>
+    <rect x="26" y="12" width="4" height="4" fill="#5ee0c4"/>
+    <rect x="18" y="16" width="4" height="4" fill="#5ee0c4"/>
+    <rect x="26" y="16" width="4" height="4" fill="#5ee0c4"/>
+
+    <!-- B -->
+    <rect x="36" y="0" width="4" height="4" fill="#5ee0c4"/>
+    <rect x="40" y="0" width="4" height="4" fill="#5ee0c4"/>
+    <rect x="44" y="0" width="4" height="4" fill="#5ee0c4"/>
+    <rect x="36" y="4" width="4" height="4" fill="#5ee0c4"/>
+    <rect x="48" y="4" width="4" height="4" fill="#5ee0c4"/>
+    <rect x="36" y="8" width="4" height="4" fill="#5ee0c4"/>
+    <rect x="40" y="8" width="4" height="4" fill="#5ee0c4"/>
+    <rect x="44" y="8" width="4" height="4" fill="#5ee0c4"/>
+    <rect x="36" y="12" width="4" height="4" fill="#5ee0c4"/>
+    <rect x="48" y="12" width="4" height="4" fill="#5ee0c4"/>
+    <rect x="36" y="16" width="4" height="4" fill="#5ee0c4"/>
+    <rect x="40" y="16" width="4" height="4" fill="#5ee0c4"/>
+    <rect x="44" y="16" width="4" height="4" fill="#5ee0c4"/>
+
+    <!-- S -->
+    <rect x="58" y="0" width="4" height="4" fill="#5ee0c4"/>
+    <rect x="62" y="0" width="4" height="4" fill="#5ee0c4"/>
+    <rect x="66" y="0" width="4" height="4" fill="#5ee0c4"/>
+    <rect x="58" y="4" width="4" height="4" fill="#5ee0c4"/>
+    <rect x="58" y="8" width="4" height="4" fill="#5ee0c4"/>
+    <rect x="62" y="8" width="4" height="4" fill="#5ee0c4"/>
+    <rect x="66" y="8" width="4" height="4" fill="#5ee0c4"/>
+    <rect x="66" y="12" width="4" height="4" fill="#5ee0c4"/>
+    <rect x="66" y="16" width="4" height="4" fill="#5ee0c4"/>
+    <rect x="58" y="16" width="4" height="4" fill="#5ee0c4"/>
+    <rect x="62" y="16" width="4" height="4" fill="#5ee0c4"/>
+  </g>
+</svg>
