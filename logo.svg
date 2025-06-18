@@ -1,0 +1,55 @@
+<svg width="70" height="70" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cyanGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00ffff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#5ee0c4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5ee0c4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle/badge -->
+  <circle cx="35" cy="35" r="35" fill="url(#cyanGradient)" opacity="0.1"/>
+
+  <!-- Binary representation of "CL" -->
+  <!-- C = 67 (ASCII) = 0100 0011 in binary -->
+  <!-- L = 76 (ASCII) = 0100 1100 in binary -->
+  <!-- Combined: 0100001101001100 (16 bits) -->
+  <!-- Arranged in a meaningful pattern within the circle -->
+  <g transform="translate(10, 10)">
+    <!-- C, row1: 0100 -->
+    <rect x="15" y="10" width="4" height="4" fill="#5ee0c4" opacity="0.3"/> <!-- 0 -->
+    <rect x="21" y="10" width="4" height="4" fill="url(#cyanGradient)"/>    <!-- 1 -->
+    <rect x="27" y="10" width="4" height="4" fill="#5ee0c4" opacity="0.3"/> <!-- 0 -->
+    <rect x="33" y="10" width="4" height="4" fill="#5ee0c4" opacity="0.3"/> <!-- 0 -->
+
+    <!-- C, row2: 0011 -->
+    <rect x="15" y="16" width="4" height="4" fill="#5ee0c4" opacity="0.3"/> <!-- 0 -->
+    <rect x="21" y="16" width="4" height="4" fill="#5ee0c4" opacity="0.3"/> <!-- 0 -->
+    <rect x="27" y="16" width="4" height="4" fill="url(#cyanGradient)"/>    <!-- 1 -->
+    <rect x="33" y="16" width="4" height="4" fill="url(#cyanGradient)"/>    <!-- 1 -->
+
+    <!-- Center: Core processor representation -->
+    <rect x="22" y="22" width="6" height="6" fill="#00cb0a"/>
+
+    <!-- L, row1: 0100 -->
+    <rect x="15" y="30" width="4" height="4" fill="#5ee0c4" opacity="0.3"/> <!-- 0 -->
+    <rect x="21" y="30" width="4" height="4" fill="url(#cyanGradient)"/>    <!-- 1 -->
+    <rect x="27" y="30" width="4" height="4" fill="#5ee0c4" opacity="0.3"/> <!-- 0 -->
+    <rect x="33" y="30" width="4" height="4" fill="#5ee0c4" opacity="0.3"/> <!-- 0 -->
+
+    <!-- L, row2: 1100 -->
+    <rect x="15" y="36" width="4" height="4" fill="url(#cyanGradient)"/>    <!-- 1 -->
+    <rect x="21" y="36" width="4" height="4" fill="url(#cyanGradient)"/>    <!-- 1 -->
+    <rect x="27" y="36" width="4" height="4" fill="#5ee0c4" opacity="0.3"/> <!-- 0 -->
+    <rect x="33" y="36" width="4" height="4" fill="#5ee0c4" opacity="0.3"/> <!-- 0 -->
+
+    <!-- Connection lines to suggest circuit pathways -->
+    <line x1="22" y1="12" x2="22" y2="16" stroke="#00ffff" stroke-width="1" opacity="0.5"/>
+    <line x1="28" y1="12" x2="28" y2="16" stroke="#00ffff" stroke-width="1" opacity="0.5"/>
+    <line x1="17" y1="18" x2="21" y2="22" stroke="#00ffff" stroke-width="1" opacity="0.5"/>
+    <line x1="31" y1="18" x2="27" y2="22" stroke="#00ffff" stroke-width="1" opacity="0.5"/>
+    <line x1="22" y1="28" x2="22" y2="32" stroke="#00ffff" stroke-width="1" opacity="0.5"/>
+    <line x1="28" y1="28" x2="28" y2="32" stroke="#00ffff" stroke-width="1" opacity="0.5"/>
+  </g>
+
+</svg>
